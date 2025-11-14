@@ -4,7 +4,7 @@ This submission was developed for the *Decibel Duel* challenge, using a dataset 
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This repository contains two main components:
 
