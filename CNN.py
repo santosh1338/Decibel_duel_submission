@@ -80,7 +80,7 @@ class AudioCNN(nn.Module):
 
 classes = ["dog_bark", "drilling", "engine_idling", "siren", "street_music"]
 
-full_dataset = AudioFeatureDataset("Train", classes=classes)
+full_dataset = AudioFeatureDataset("train", classes=classes)
 indices = list(range(len(full_dataset)))
 train_idx, val_idx = train_test_split(indices, test_size=0.2, shuffle=True, random_state=42)
 
@@ -126,7 +126,7 @@ for epoch in range(epochs):
 
     print(epoch+1, train_loss/len(train_loader), val_loss/len(val_loader), correct/total)
 
-test_dataset = AudioFeatureDataset("Test", is_test=True)
+test_dataset = AudioFeatureDataset("test", is_test=True)
 test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
 
 model.eval()
