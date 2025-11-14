@@ -1,0 +1,6 @@
+torch
+torchaudio
+tqdm
+pandas
+scikit-learn
+numpy
